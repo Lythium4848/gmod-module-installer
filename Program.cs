@@ -21,7 +21,7 @@ gmodBinPath = gmodPath + "/garrysmod/lua/bin/";
 if (module == "1")
 {
     Console.WriteLine("Installing Module...".Pastel(Color.Blue));
-    Installer.Download("arsenic-net/arsenic-discord-rpc/releases/tag/arsenic/", "gmcl_gdiscord", gmodBinPath);
+    Installer.Download("fluffy-servers/gmod-discord-rpc/releases/tag/1.1/", "gmcl_gdiscord", gmodBinPath);
 }
 
 if (module == "2")
