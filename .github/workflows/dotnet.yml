@@ -20,7 +20,7 @@ jobs:
     - name: Setup NuGet.exe
       uses: nuget/setup-nuget@v1
       with:
-        nuget-version: ${{ matrix.nuget }}
+        nuget-version: latest
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
