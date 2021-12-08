@@ -31,7 +31,7 @@ jobs:
       uses: softprops/action-gh-release@v1
       with:
         files: |
-          ${{ secrets.DIR }}ArsenicModuleInstaller.exe
+          bin/Debug/net6.0/ArsenicModuleInstaller.exe
         tag_name: bruh
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
