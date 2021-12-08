@@ -25,7 +25,11 @@ jobs:
       uses: papeloto/action-zip@v1
       with:
           files: |
-            bin/Debug/net6.0/ArsenicModuleInstaller.dll "${{ secrets.DIR }}ArsenicModuleInstaller.runtimeconfig.json" "${{ secrets.DIR }}Facepunch.Steamworks.Win64.dll" "${{ secrets.DIR }}Pastel.dll" "${{ secrets.DIR }}steam_api64.dll"
+            bin/Debug/net6.0/ArsenicModuleInstaller.dll 
+            bin/Debug/net6.0/ArsenicModuleInstaller.runtimeconfig.json 
+            bin/Debug/net6.0/Facepunch.Steamworks.Win64.dll 
+            bin/Debug/net6.0/Pastel.dll 
+            bin/Debug/net6.0/steam_api64.dll
           dest: result.zip
     - name: Release
       uses: softprops/action-gh-release@v1
