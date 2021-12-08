@@ -14,8 +14,8 @@ public static class Installer
             File.Delete(packageName+"_win32.dll");
             File.Delete(packageName+"_win64.dll");
         }
-        client.DownloadFile("https://github.com/"+url+packageName+"_win32", gmodPath+packageName+"_win32.dll");
-        client.DownloadFile("https://github.com/"+url+packageName+"_win64", gmodPath+packageName+"_win64.dll");
+        client.DownloadFile("https://github.com/"+url+packageName+"_win32.dll", gmodPath+packageName+"_win32.dll");
+        client.DownloadFile("https://github.com/"+url+packageName+"_win64.dll", gmodPath+packageName+"_win64.dll");
         Console.WriteLine("Module Successfully Installed!".Pastel(Color.Green));
     }
 
