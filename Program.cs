@@ -14,6 +14,10 @@ Console.Write("Module you would like to install:    ".Pastel(Color.FromArgb(165,
 var module = Console.ReadLine();
 var gmodPath = SteamApps.AppInstallDir(4000);
 var gmodBinPath = gmodPath + "/garrysmod/lua/bin/";
+if (!Directory.Exists(gmodBinPath))
+{
+    Directory.CreateDirectory(gmodBinPath);
+}
 
 if (module == "1")
 {
