@@ -29,12 +29,12 @@ jobs:
       uses: papeloto/action-zip@v1
       with:
           files: bin/Debug/net6.0/ArsenicModuleInstaller.dll bin/Debug/net6.0/ArsenicModuleInstaller.runtimeconfig.json bin/Debug/net6.0/Facepunch.Steamworks.Win64.dll bin/Debug/net6.0/Pastel.dll /steam_api64.dll
-          dest: result.zip
+          dest: ArsenicModuleInstaller.zip
     - name: Release
       uses: softprops/action-gh-release@v1
       with:
         files: |
-          bin/Debug/net6.0/ArsenicModuleInstaller.exe
+          bin/Debug/net6.0/ArsenicModuleInstaller.zip
         tag_name: bruh
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
