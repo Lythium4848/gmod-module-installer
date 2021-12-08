@@ -35,6 +35,6 @@ jobs:
       with:
         files: |
           ArsenicModuleInstaller.zip
-        tag_name: bruh
+        tag_name: latest
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
