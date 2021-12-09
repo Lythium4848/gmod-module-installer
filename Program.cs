@@ -22,12 +22,12 @@ if (!Directory.Exists(gmodBinPath))
 if (module == "1")
 {
     Console.WriteLine("Installing Module...".Pastel(Color.Blue));
-    Installer.Download("fluffy-servers/gmod-discord-rpc/releases/tag/1.1/", "gmcl_gdiscord", gmodBinPath);
+    Installer.Download("fluffy-servers/gmod-discord-rpc/releases/download/1.1/", "gmcl_gdiscord", gmodBinPath);
 }
 else if (module == "2")
 {
     Console.WriteLine("Installing Module...".Pastel(Color.Blue));
-    Installer.Download("FPtje/gmcl_midi/releases/tag/v0.2.0/", "gmcl_midi", gmodBinPath);
+    Installer.Download("FPtje/gmcl_midi/releases/download/v0.2.0/", "gmcl_midi", gmodBinPath);
 }
 
 SteamClient.Shutdown();
